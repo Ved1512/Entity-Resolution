@@ -1,0 +1,120 @@
+# ==============================================================================
+# Git Ignore - Entity Resolution (Amazon ML Challenge 2026)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Datasets & Raw / Preprocessed Data (TSV, CSV, Archives)
+# ------------------------------------------------------------------------------
+# All competition datasets and data directories
+dataset/
+**/dataset/
+**/dataset/**
+Preprocessed/
+**/Preprocessed/
+**/Preprocessed/**
+_student_resource/student_resource/dataset/
+
+# Raw and preprocessed tabular data
+*.tsv
+*.csv
+!Team Noir_submission/code/business_entity_resolution/src/fn_analysis.json
+
+# Documents & Large Binaries
+*.pdf
+*.docx
+*.xlsx
+# Compressed archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ------------------------------------------------------------------------------
+# 2. Large Generated Outputs & Predictions
+# ------------------------------------------------------------------------------
+output/
+**/output/
+**/output/**
+*candidate_pairs*.tsv
+*matching_results*.tsv
+*foreign_businesses*.tsv
+
+# ------------------------------------------------------------------------------
+# 3. Model Checkpoints, Matrix Caches & Pickles
+# ------------------------------------------------------------------------------
+blocking2_cache/
+**/blocking2_cache/
+**/blocking2_cache/**
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.joblib
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# ------------------------------------------------------------------------------
+# 4. Python Environment & Compilation Artifacts
+# ------------------------------------------------------------------------------
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Linting Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------------------------
+# 5. OS, IDE & System-Specific Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDE & Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Windows specific
+powershell.cmd
+*.cmd
+*.bat
+
+# Scratch and patch scripts
+fix.py
+fix2.py
+scratch/
+
+# Logs
+*.log

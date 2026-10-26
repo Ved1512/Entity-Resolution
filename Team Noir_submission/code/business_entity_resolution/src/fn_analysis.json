@@ -1,0 +1,1 @@
+{"Missing Data (Null String)": 0.0, "Language/Script Mismatch": 35.48, "Completely Different (Jaccard < 0.2)": 3.23, "Heavy Typos (Jaccard 0.2 - 0.4)": 21.11, "Near Miss (Jaccard > 0.4)": 40.18}
